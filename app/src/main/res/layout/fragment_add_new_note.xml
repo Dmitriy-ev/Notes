@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.newnote.AddNewNoteFragment">
+
+   <EditText
+       android:id="@+id/input_name_not"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_editor_absoluteX="16dp"
+       tools:ignore="LabelFor"
+       style="@style/edit_Text"
+       android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/input_text_not"
+        app:layout_constraintTop_toBottomOf="@id/input_name_not"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_editor_absoluteX="16dp"
+        tools:ignore="LabelFor"
+        style="@style/edit_Text"
+        android:autofillHints="" />
+    
+    <Button
+        android:id="@+id/btn_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dtn_add_note"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/input_text_not"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/app_margin"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
